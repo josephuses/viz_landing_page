@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Visualizations | Joseph S. Tabadero, Jr.</title>
+    <style>
+        :root {
+            --primary-color: #0366d6;
+            --bg-color: #f6f8fa;
+            --card-bg: #ffffff;
+            --text-main: #24292e;
+            --text-muted: #586069;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--text-main);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            color: #e1e4e8;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 24px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .card h2 a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .card h2 a:hover {
+            text-decoration: underline;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #005cc5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            border-top: 1px solid #e1e4e8;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .license-text {
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: #6a737d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Statistics Visualizations</h1>
+        <p>A collection of educational tools and data visualizations by Joseph S. Tabadero, Jr.</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card">
+                <h2><a href="https://josephuses.github.io/binomial_viz/" target="_blank">Binomial Distribution</a></h2>
+                <p>Interactive visualization exploring the properties and probabilities of the binomial distribution.</p>
+                <a href="https://josephuses.github.io/binomial_viz/" target="_blank" class="btn">View App</a>
+            </div>
+
+            <div class="card">
+                <h2><a href="https://josephuses.github.io/monty_hall_viz/" target="_blank">Monty Hall Problem</a></h2>
+                <p>A visual simulation of the famous probability puzzle to demonstrate why switching doors is the best strategy.</p>
+                <a href="https://josephuses.github.io/monty_hall_viz/" target="_blank" class="btn">View App</a>
+            </div>
+
+            <div class="card">
+                <h2><a href="https://josephuses.github.io/regression_viz/" target="_blank">Linear Regression</a></h2>
+                <p>An interactive tool to visualize lines of best fit, residuals, and the mechanics of linear regression.</p>
+                <a href="https://josephuses.github.io/regression_viz/" target="_blank" class="btn">View App</a>
+            </div>
+
+            <div class="card">
+                <h2><a href="https://josephuses.github.io/hypothesis_power_viz/" target="_blank">Hypothesis & Power</a></h2>
+                <p>Visualize Type I & Type II errors, alpha levels, and statistical power in hypothesis testing.</p>
+                <a href="https://josephuses.github.io/hypothesis_power_viz/" target="_blank" class="btn">View App</a>
+            </div>
+
+            <div class="card">
+                <h2><a href="https://josephuses.github.io/ci_viz/" target="_blank">Confidence Intervals</a></h2>
+                <p>Simulate and visualize how confidence intervals capture the true population parameter over repeated samples.</p>
+                <a href="https://josephuses.github.io/ci_viz/" target="_blank" class="btn">View App</a>
+            </div>
+
+            <div class="card">
+                <h2><a href="https://josephuses.github.io/bayes_viz/" target="_blank">Bayes' Theorem</a></h2>
+                <p>Interactive calculator and visualization for updating probabilities using Bayes' Theorem.</p>
+                <a href="https://josephuses.github.io/bayes_viz/" target="_blank" class="btn">View App</a>
+            </div>
+
+            <div class="card">
+                <h2><a href="https://josephuses.github.io/clt-viz/" target="_blank">Central Limit Theorem</a></h2>
+                <p>Demonstration of how the sampling distribution of the mean approaches a normal distribution.</p>
+                <a href="https://josephuses.github.io/clt-viz/" target="_blank" class="btn">View App</a>
+            </div>
+
+            <div class="card">
+                <h2><a href="https://josephuses.github.io/lln-viz/" target="_blank">Law of Large Numbers</a></h2>
+                <p>Observe how sample averages converge to the expected value as the sample size increases.</p>
+                <a href="https://josephuses.github.io/lln-viz/" target="_blank" class="btn">View App</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>&copy; 2026 Joseph S. Tabadero, Jr.</strong></p>
+        <p class="license-text">All visualizations are open-source and released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.<br> You are free to use, modify, and distribute them as long as attribution is provided.</p>
+    </footer>
+
+</body>
+</html>
